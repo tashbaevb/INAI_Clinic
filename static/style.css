@@ -1,0 +1,523 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+    height: auto;
+
+}
+
+section div h3 {
+    font-size: 22px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background: rgb(255, 255, 255)
+
+}
+
+.img-main-header {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.img-main-header-first {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+header nav {
+    position: fixed;
+    top: 2%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 15px;
+
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(240, 248, 255, 0.468);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    align-items: center;
+}
+
+.head {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h1 {
+    text-align: center;
+    width: 700px;
+    font-size: 5rem;
+    color: white;
+    margin: 40px 0;
+}
+
+.head p {
+    font-size: 26px;
+    color: white;
+    width: 800px;
+    text-align: center;
+}
+
+.head a {
+    border: 1px solid white;
+    padding: 10px 25px;
+    background-color: white;
+    margin: 15px 0;
+    border-radius: 2px;
+}
+
+.head a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.head1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.head1 h1 {
+    text-align: center;
+    width: 700px;
+    font-size: 5rem;
+    color: white;
+    margin: 40px 0;
+}
+
+.head1 a {
+    border: 1px solid white;
+    padding: 10px 25px;
+    background-color: white;
+    margin: 15px 0;
+    border-radius: 2px;
+}
+
+.head1 a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+.card_cont {
+    width: 100%;
+    height: auto;
+}
+
+.mini {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini article {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background: rgb(241, 240, 240);
+    border: solid 2px rgb(189, 185, 185);
+}
+
+.mini article div {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.223);
+    z-index: 3;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mini article div:hover {
+    background-color: yellow;
+
+    color: rgba(131, 178, 37, 0.596);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.mini1 article div {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.223);
+    z-index: 3;
+
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mini1 article {
+
+    height: 750px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+}
+
+.mini1 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+
+
+.card_cont1 {
+    width: 90%;
+
+    margin-top: -90px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.human {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+.prof {
+
+    margin-top: 5px;
+
+}
+
+.FIO {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.human-doctor {
+
+    width: 750px;
+    height: 550px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.prof-doctor {
+
+    margin-top: 5px;
+
+}
+
+.FIO-doctor {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card_cont-doctor {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.doctor-mini article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.223);
+    z-index: 3;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.doctor-mini article {
+    height: 580px !important;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.doctor-mini {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+
+footer {
+
+    background: rgb(247, 247, 247);
+    opacity: 80%;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.doctorsinf {
+    width: 500px;
+    height: 500px;
+}
+
+
+.liniya {
+    width: 30%;
+    height: 2px;
+
+    opacity: 50%;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    border-bottom: dotted green;
+
+}
+
+.row-liniya-horizontal {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.liniya2 {
+    margin-top: 1%;
+    width: 1px;
+    height: 90%;
+    background: rgb(85, 81, 85);
+    border-bottom: dotted;
+
+
+}
+
+.footer-col1 {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+
+}
+
+.liniya-footer {
+    height: 3px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgb(149, 148, 148);
+    opacity: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.margin1 {
+    margin-top: 30px;
+}
+
+
+.services {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    /* background: rgb(194, 255, 194); */
+
+}
+
+.col-md-3 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    margin: 20px;
+
+
+}
+
+h3 {
+    margin: 5px;
+    border: none;
+}
+
+.services-img {
+
+    width: 180px;
+    height: 180px;
+}
+
+.img-whats {
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+}
+
+.whatsInaiClinic {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.whatsInaiClinicCard {
+    margin-top: 30px;
+    width: 350px;
+    height: 550px;
+    margin-left: 80px;
+
+}
+
+h2 {
+    margin: 5px;
+}
+
+.contacts-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.iframe1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+iframe {
+    width: 80%;
+    height: 600px;
+}
+
+.about-clinic-section {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 5% 5% 5% 5%;
+}
+
+
+.about-clinic-Name {
+    margin: 0% 0% 1% 46%;
+
+}
+
+.about-clinic-info {
+
+    margin: 20px 5% 5% 5%;
+}
+
+
+.about-clinic-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-clinic-p {
+    margin-bottom: 20px
+}
+
+.news {
+    width: 600px;
+    height: 400px;
+    margin: 50px 50px 100px 1px;
+
+}
+
+.footer-col1 h5 {
+    font-weight: 400;
+}
+
+.footer-col1 h4 {
+    font-weight: 400;
+}
+
+.margin2 {
+    margin-top: 10px;
+}
+.comment {
+width: 100%;
+display: flex;
+align-items: center;}

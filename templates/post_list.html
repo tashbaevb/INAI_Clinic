@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+{% for i in img %}
+<section class="height:400px;">
+    <div style="width:100% ; height:50px; background: rgb(36, 131, 194); padding: 8px; ">
+        <h3 style="color: white; margin-left: 26%;"> All conditions for your safety. Enhanced sanitary measures in the
+            clinic!</h3>
+    </div>
+
+    <div class="header-main">
+        <a href="/"><img style="margin-left: 80px; width: 300px; height: 150px;" src="../media/image_1560843428.jpg"
+                         alt=""></a>
+        <div style="margin-left: auto; display: flex; align-items: center;justify-content: space-around">
+            <a href="{% url 'add' %}">
+                <button style="padding: 10px;border-radius: 10px; background-color: cornflowerblue; color: white; border: none"
+                        type="submit">Make an appointment
+                </button>
+            </a>
+            <a href=" https://wa.me/+996777459245">
+                <img class="img-main-header-first" src="../media/icons8-whatsapp.gif" alt="">
+            </a>
+            <a href="https://web.telegram.org/z/#-1657853630">
+                <img class="img-main-header-first" src="../media/icons8-telegram-app.gif" alt="">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img class="img-main-header-first" src="../media/icons8-facebook.svg" alt="">
+            </a>
+            <a href="">
+                <img style="margin-left: 60px; width: 40px; height: 40px;" class="img-main-header-first"
+                     src="../media/call.png"
+                     alt="">
+            </a>
+        </div><a href="tel:+996777459245">
+        <p style="margin-left: 5px;">{{i.number}}</p></a></div>
+    <div style="width: 90%; height:1px; background:gray; margin-left: 5%; opacity: 50%;"></div>
+    <div style="display: flex; justify-content: center; align-items: center">
+        <ul style="display: flex; flex-direction:row; gap: 70px">
+            <a href="{% url 'service' %}">
+                <img style="margin-left: 100px;" class="img-main-header" src="../media/dentist-chair.png" alt="">
+                <h5 style="margin-left: 90px;">Services</h5>
+            </a>
+            <a href="{% url 'doctors' %}">
+                <img class="img-main-header" src="../media/doctor.png" alt="">
+                <h5 style="margin-left: 45px;">Doctors</h5>
+            </a>
+            <a href="{% url 'about' %}">
+                <img class="img-main-header" src="../media/dental-clinic.png" alt="">
+                <h5 style="margin-left: 25px;">About clinic</h5>
+            </a>
+            <a href="{% url 'contact' %}">
+                <img class="img-main-header" src="../media/phone-book.png" alt="">
+                <h5 style="margin-left: 40px;">Contacts</h5>
+            </a>
+        </ul>
+    </div>
+    <div style=" opacity: 50%; width: 90%; height:1px; background:gray; margin-left: 5%; margin-top: 10px;"></div>
+</section>
+<div id="carouselExampleFade"
+     class="carousel slide carousel-fade"
+     data-bs-ride="carousel"
+     style="width: 90%; height:800px; margin: auto;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img style="width: 100%; height:750px; display: none"
+                 src="{{i.image.url}}"
+                 class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img style="width: 70%; height:750px; border-radius: 0 0 20px 20px"
+                 src="{{i.image1.url}}" class="d-block w-100" alt="..."/>
+        </div>
+        <div class="carousel-item">
+            <img style="width: 70%; height:750px;"
+                 src="{{i.image2.url}}" class="d-block w-100" alt="..."/>
+        </div>
+    </div>
+    <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="row-liniya-horizontal" style="margin-top: 80px; ">
+    <div class="liniya"></div>
+    <h1> Tips </h1>
+    <div class="liniya"></div>
+</div>
+{% for i in new %}
+<div style="display:flex; flex-direction:row;">
+    <div>
+        <img style="margin-left: 100px; border-radius: 20px" class="news"
+             src="{{i.image_advices.url}}"
+             alt="">
+    </div>
+    <div>
+        <img class="news" style="border-radius: 20px"
+             src="{{i.image_advices1.url}}"
+             alt="">
+    </div>
+</div>
+{% endfor %}
+<div class="row-liniya-horizontal" style="margin-top: -80px; ">
+    <div class="liniya"></div>
+    <h1> News </h1>
+    <div class="liniya"></div>
+</div>
+{% for i in new %}
+<section style="align-items: center;">
+    <div>
+        <img src="{{i.image.url}}" alt="" style="width: 90%; height: 700px;margin-left: 5%">
+    </div>
+</section>
+{% endfor %}
+<div class="row-liniya-horizontal">
+    <div class="liniya"></div>
+    <h1 style="display:flex; flex-direction:row;"></h1>
+    <div class="liniya"></div>
+</div>
+
+<section class="whatsInaiClinic" style="width:100%;">
+    {% for i in inai %}
+    <div class="whatsInaiClinicCard">
+        <img class="img-whats" src="{{i.image.url}}" alt="">
+        <h2>{{i.title}}</h2>
+        <p>{{i.descriptions}}</p>
+    </div>
+    {% endfor %}
+</section>
+
+<div class="liniya-footer"></div>
+<div class="iframe1">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4479.360224689796!2d74.60193945376349!3d42.84006061887937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb618921598d7%3A0xea43bfa802477f7e!2z0JrRi9GA0LPRi9C30YHQutC40Lkg0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0YHRgtGA0L7QuNGC0LXQu9GM0YHRgtCy0LAsINGC0YDQsNC90YHQv9C-0YDRgtCwINC4INCw0YDRhdC40YLQtdC60YLRg9GA0Ys!5e0!3m2!1sru!2skg!4v1670004990593!5m2!1sru!2skg"
+            width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="liniya-footer"></div>
+<footer class="footer-footer">
+    {% for i in foot %}
+    <div class="footer-col1">
+        <img src="../media/image_1560843428-removebg-preview.png" alt="" style="width:250px ; height: auto;">
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl"><h4 class="margin2">{{i.email}}</h4></a>
+        <a href=""><h4 class="margin2" style="color: blue; font-weight: 400; ">{{i.number}}</h4>
+        </a>
+        <p style="margin:5px;">{{i.text}}</p>
+    </div>
+    {% endfor %}
+    <div class="liniya2"></div>
+    <div class="footer-col1">
+        <h3 class="margin1" style="margin-left: -5px;">Company</h3>
+        <a href="{% url 'about' %}"><h5 class="margin1">About us</h5></a>
+        <a href="{% url 'doctors' %}"><h5 class="margin1">Doctors</h5></a>
+        <a href="{% url 'contact' %}"><h5 class="margin1">Contacts</h5></a>
+        <a href="{% url 'service' %}"><h5 class="margin1">Service</h5></a>
+    </div>
+    <div class="footer-col1">
+        <h3 class="margin1" style="margin-left: -5px;">Pay</h3>
+        <a href="https://www.mbank.pl/indywidualny/"><h5 class="margin1">Mbank</h5></a>
+        <a href="http://www.sberbank.ru/ru/person"><h5 class="margin1">Sber</h5></a>
+        <a href="https://qiwi.com/"><h5 class="margin1">QIWI</h5></a>
+    </div>
+    <div class="footer-col1">
+        <h3 class="margin1" style="margin-left: -5px;">Social page</h3>
+        <a href="https://help.instagram.com/372819389498306/?helpref=uf_share"><h5 class="margin1">Instagram</h5></a>
+        <a href="https://web.telegram.org/z/#-1657853630"><h5 class="margin1">Telegram</h5></a>
+        <a href=" https://wa.me/+996777459245"><h5 class="margin1">Whatsapp</h5></a>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+</script>
+{% endfor %}
+</body>
+</html>
